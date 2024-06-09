@@ -9,7 +9,7 @@ module.exports={
     createTaskMiddle:async(req,res,next)=>{
         try {
             const validate=await createTaskSchema.validateAsync(req.body)
-            req.validatedBody = validate;
+            req.validatedBody = validate
             next();  
         } catch (error) {
             res.status(400).send({

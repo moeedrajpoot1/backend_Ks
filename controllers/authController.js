@@ -1,4 +1,4 @@
-require("dotenv").config()
+require("dotenv").config();
 const userModels=require('../Models/userModels')
 const {compare}=require("bcryptjs")
 const {sign}=require("jsonwebtoken")

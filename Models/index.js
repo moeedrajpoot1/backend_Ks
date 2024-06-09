@@ -1,4 +1,4 @@
-const sequelize=require("../bin/DbConnections")
+const sequelize=require("../bin/DbConnections");
 const tasks=require("./tables/tasks")
 const users=require("./tables/users")
 const session=require("./tables/sessions")

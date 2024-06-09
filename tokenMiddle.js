@@ -5,7 +5,7 @@ const sessionModel=require("./Models/sessionModels")
 module.exports={
  verifyToken:async(req,res,next)=>{
     try {
-      
+       
        
         let {token,userId}=req.cookies.auth
    

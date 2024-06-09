@@ -1,5 +1,5 @@
 
-const {models}=require("./index")
+const {models}=require("./index");
 
 
 module.exports={

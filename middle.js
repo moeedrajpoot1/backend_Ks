@@ -19,8 +19,8 @@ module.exports = {
     createMiddleware: async (req, res, next) => {
         try {
             const validate = await createUserSchema.validateAsync(req.body);
-            req.validatedBody = validate;
-            next();  
+            req.validatedBody = validate
+            next();
         } catch (error) {
             res.status(400).send({
                 error: error.details[0].message  

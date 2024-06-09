@@ -1,4 +1,4 @@
-const {Model,DataTypes}=require("sequelize")
+const {Model,DataTypes}=require("sequelize");
 const sequelize = require("../../bin/DbConnections")
 const users=require('../../Models/tables/users')
 const {v4:uuid}=require("uuid")

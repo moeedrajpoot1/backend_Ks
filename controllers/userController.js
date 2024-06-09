@@ -1,6 +1,6 @@
 
 const {v4:uuid}=require("uuid")
-const userModel=require('../Models/userModels')
+const userModel=require('../Models/userModels');
 module.exports={
     createUser:async(req,res)=>{
         try {
@@ -25,7 +25,7 @@ module.exports={
     getAllUser:async(req,res)=>{
         try {
             const users= await userModel.getAllUser()
-            console.log(users,"get usersssssssssssssssmmmmmmmmmmmmmmmmmmmmmmmmmm")
+            
             if(users.error){
                 res.send({
                     message:"Something Went Wrong",

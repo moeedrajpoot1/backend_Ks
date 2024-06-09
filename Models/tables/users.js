@@ -1,4 +1,4 @@
-const {Model,DataTypes}=require('sequelize')
+const {Model,DataTypes}=require('sequelize');
 const sequelize=require("../../bin/DbConnections")
 const {hash}=require("bcryptjs")
 const {v4:uuid}=require("uuid")
